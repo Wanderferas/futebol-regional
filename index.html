@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Futebol Regional - O Portal da Galera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>⚽ Futebol Regional</h1>
+        <p>Acompanhe os craques da nossa terra!</p>
+    </header>
+
+    <main>
+        <section id="classificacao">
+            <h2>Tabela de Classificação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>P</th>
+                        <th>J</th>
+                        <th>V</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo">
+                    <tr>
+                        <td>Time da Vila</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="avaliar">
+            <h2>Avaliar Jogador</h2>
+            <input type="text" id="nomeJogador" placeholder="Nome do Jogador">
+            <input type="number" id="notaJogador" placeholder="Nota (0-10)" min="0" max="10">
+            <button onclick="darNota()">Enviar Avaliação</button>
+            <div id="listaAvaliacoes"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
